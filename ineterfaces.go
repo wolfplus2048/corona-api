@@ -2,8 +2,6 @@ package corona
 
 import (
 	"context"
-	"github.com/spf13/viper"
-	"net"
 )
 
 type Session interface {
@@ -13,7 +11,7 @@ type Session interface {
 	Kick(ctx context.Context) error
 	OnClose(c func()) error
 	Close()
-	RemoteAddr() net.Addr
+	PeerAddr() string
 	Set(key string, value interface{}) error
 	Get(key string) interface{}
 }
@@ -23,7 +21,7 @@ type App interface {
 	Register(c Component, name string)
 	RegisterRemote(c Component, name string)
 	RegisterModule(module Module, name string) error
-	Configure(isFrontend bool, serverType string, serverMetadata map[string]string, cfgs ...*viper.Viper)
+	Configure(isFrontend bool, serverType string, serverMetadata map[string]string)
 	Start()
 }
 
