@@ -19,11 +19,11 @@ type Session interface {
 }
 
 type App interface {
-	AddAcceptor(addr string, certs ...string) error
+	AddAcceptor(addr string, certs ...string)
 	Register(c Component, name string)
 	RegisterRemote(c Component, name string)
 	RegisterModule(module Module, name string) error
-	Configure(isFrontend bool, serverType string, serverMetadata map[string]string, cfgs ...*viper.Viper) error
+	Configure(isFrontend bool, serverType string, serverMetadata map[string]string, cfgs ...*viper.Viper)
 	Start()
 }
 
