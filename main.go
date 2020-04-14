@@ -4,9 +4,6 @@ import (
 	"plugin"
 )
 
-var (
-	app App
-)
 func Default() App {
 	p, err := plugin.Open("./corona.so")
 	if err != nil {
