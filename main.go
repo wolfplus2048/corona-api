@@ -7,7 +7,7 @@ import (
 var (
 	app App
 )
-func init()  {
+func Default() App {
 	p, err := plugin.Open("./corona.so")
 	if err != nil {
 		panic(err)
@@ -16,9 +16,9 @@ func init()  {
 	if err != nil {
 		panic(err)
 	}
-	a, ok := sym.(App)
+	app, ok := sym.(App)
 	if !ok {
 		panic("expecting corona.app interface")
 	}
-	app = a
+	return app
 }
