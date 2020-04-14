@@ -2,6 +2,7 @@ package corona
 
 import (
 	"context"
+	"time"
 )
 
 type Session interface {
@@ -23,6 +24,9 @@ type App interface {
 	RegisterModule(module Module, name string) error
 	Configure(isFrontend bool, serverType string, serverMetadata map[string]string)
 	Start()
+	NewCountTimer(interval time.Duration, count int, fn func()) int64
+	RemoveTimer(id int64)
+	AsyncTask(routine func()(interface{}, error), callback func(interface{}, error))
 }
 
 // Module is the interface that represent a module.
