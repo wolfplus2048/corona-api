@@ -2,6 +2,7 @@ package corona
 
 import (
 	"context"
+	"github.com/spf13/viper"
 	"time"
 )
 
@@ -22,13 +23,15 @@ type App interface {
 	Register(c Component, name string)
 	RegisterRemote(c Component, name string)
 	RegisterModule(module Module, name string) error
-	Configure(isFrontend bool, serverType string, serverMetadata map[string]string)
+	Configure(isFrontend bool, serverType string, serverMetadata map[string]string, cfgs ...*viper.Viper)
 	Start()
+
+}
+type Auxer interface {
 	NewCountTimer(interval time.Duration, count int, fn func()) int64
 	RemoveTimer(id int64)
 	AsyncTask(routine func()(interface{}, error), callback func(interface{}, error))
 }
-
 // Module is the interface that represent a module.
 type Module interface {
 	Init() error

@@ -1,8 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5f0ff8-cf12-4b7f-ac82-d75781be3d90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ineterfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/ineterfaces.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +38,6 @@
         <option value="Go File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>golang.org/x/te</find>
-    </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
@@ -37,6 +55,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -46,10 +65,12 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/example" />
       <recent name="D:\Developer\Go\corona-api" />
     </key>
   </component>
@@ -64,6 +85,16 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="corona-api" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-trimpath" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/example/main.go" />
+      <package value="github.com/wolfplus2048/corona-api/example" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="corona-api" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -75,15 +106,31 @@
       <filePath value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
     <environment>
       <map>
-        <entry key="GOPROXY" value="https://mirrors.aliyun.com/goproxy/" />
+        <entry key="GOPROXY" value="https://goproxy.io" />
       </map>
     </environment>
     <proxy>https://mirrors.aliyun.com/goproxy/</proxy>
@@ -93,13 +140,35 @@
       <screen x="68" y="23" width="1852" height="1057" />
     </state>
     <state x="794" y="217" key="#GOPATH/68.23.1852.1057@68.23.1852.1057" timestamp="1587042357952" />
-    <state x="741" y="276" key="FileChooserDialogImpl" timestamp="1586598698478">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="347" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587116732560">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="347" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1052@67.27.1853.1052" timestamp="1587116732560" />
+    <state x="782" y="298" width="424" height="492" key="FileChooserDialogImpl" timestamp="1587110707805">
+      <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="741" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586598698478" />
-    <state x="503" y="190" key="SettingsEditor" timestamp="1587042312998">
-      <screen x="68" y="23" width="1852" height="1057" />
+    <state x="782" y="298" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1587110707805" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1587117177550">
+      <screen x="67" y="27" width="1853" height="1052" />
     </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1052@67.27.1853.1052" timestamp="1587117177550" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1587117177549">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1052@67.27.1853.1052" timestamp="1587117177549" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1587117177549">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1052@67.27.1853.1052" timestamp="1587117177549" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1587117177550">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1052@67.27.1853.1052" timestamp="1587117177550" />
+    <state x="502" y="177" width="1016" height="738" key="SettingsEditor" timestamp="1587113590020">
+      <screen x="67" y="27" width="1853" height="1052" />
+    </state>
+    <state x="502" y="177" width="1016" height="738" key="SettingsEditor/67.27.1853.1052@67.27.1853.1052" timestamp="1587113590020" />
     <state x="503" y="190" key="SettingsEditor/68.23.1852.1057@68.23.1852.1057" timestamp="1587042312998" />
   </component>
 </project>
