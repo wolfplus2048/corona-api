@@ -2,6 +2,7 @@ package corona
 
 import (
 	"plugin"
+	"runtime"
 )
 var (
 	app App
@@ -12,10 +13,10 @@ func Default(name ...string) App {
 	if app != nil {
 		return app
 	}
-	if name == nil {
-		pluginName = "corona.so"
-	} else {
+	if name != nil {
 		pluginName = name[0]
+	} else {
+		pluginName = "corona-" + runtime.GOOS + ".so"
 	}
 	p, err := plugin.Open(pluginName)
 	if err != nil {
