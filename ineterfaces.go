@@ -13,7 +13,6 @@ type Session interface {
 	Kick(ctx context.Context) error
 	OnClose(c func()) error
 	Close()
-	PeerAddr() string
 	Set(key string, value interface{}) error
 	Get(key string) interface{}
 }
