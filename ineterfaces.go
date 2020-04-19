@@ -9,7 +9,7 @@ import (
 type Session interface {
 	Push(route string, v interface{}) error
 	UID() string
-	Bind(ctx context.Context, uid string)
+	Bind(ctx context.Context, uid string) error
 	Kick(ctx context.Context) error
 	OnClose(c func()) error
 	Close()
