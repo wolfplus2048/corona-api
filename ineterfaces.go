@@ -30,6 +30,8 @@ type Auxer interface {
 	NewCountTimer(interval time.Duration, count int, fn func()) int64
 	RemoveTimer(id int64)
 	AsyncTask(routine func()(interface{}, error), callback func(interface{}, error))
+	GetConfig() *viper.Viper
+	GetServerID() string
 }
 // Module is the interface that represent a module.
 type Module interface {

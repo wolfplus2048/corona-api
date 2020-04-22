@@ -1,6 +1,8 @@
 package corona
 
 import (
+	"context"
+	"log"
 	"plugin"
 	"runtime"
 )
@@ -51,4 +53,12 @@ func Aux() Auxer {
 	}
 	aux = a
 	return aux
+}
+func GetSessionFromCtx(ctx context.Context) Session {
+	sessionVal := ctx.Value("session")
+	if sessionVal == nil {
+		log.Print("ctx doesn't contain a session, are you calling GetSessionFromCtx from inside a remote?")
+		return nil
+	}
+	return sessionVal.(Session)
 }
