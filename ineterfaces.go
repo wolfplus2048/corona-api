@@ -2,6 +2,7 @@ package corona
 
 import (
 	"context"
+	"github.com/golang/protobuf/proto"
 	"github.com/spf13/viper"
 	"time"
 )
@@ -32,6 +33,7 @@ type Auxer interface {
 	AsyncTask(routine func()(interface{}, error), callback func(interface{}, error))
 	GetConfig() *viper.Viper
 	GetServerID() string
+	RPC(ctx context.Context, routeStr string, reply proto.Message, arg proto.Message) error
 }
 // Module is the interface that represent a module.
 type Module interface {
