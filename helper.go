@@ -2,9 +2,11 @@ package corona
 
 import (
 	"context"
+	"github.com/spf13/viper"
 	"log"
 	"plugin"
 	"runtime"
+	"time"
 )
 var (
 	app App
@@ -61,4 +63,16 @@ func GetSessionFromCtx(ctx context.Context) Session {
 		return nil
 	}
 	return sessionVal.(Session)
+}
+func Config() *viper.Viper {
+	return aux.GetConfig()
+}
+func AsyncTask(routine func()(interface{}, error), callback func(interface{}, error))  {
+	aux.AsyncTask(routine, callback)
+}
+func NewCountTimer(interval time.Duration, count int, fn func()) int64 {
+	return aux.NewCountTimer(interval, count, fn)
+}
+func RemoveTimer(id int64) {
+	aux.RemoveTimer(id)
 }
