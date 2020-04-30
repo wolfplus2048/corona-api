@@ -2,6 +2,7 @@ package corona
 
 import (
 	"context"
+	"github.com/gogo/protobuf/proto"
 	"github.com/spf13/viper"
 	"log"
 	"plugin"
@@ -11,12 +12,12 @@ import (
 var (
 	app App
 	aux Auxer
-	pluginName string
 )
 func Default(name ...string) App {
 	if app != nil {
 		return app
 	}
+	var pluginName string
 	if name != nil {
 		pluginName = name[0]
 	} else {
@@ -30,31 +31,20 @@ func Default(name ...string) App {
 	if err != nil {
 		panic(err)
 	}
-	a, ok := sym.(App)
+	var ok bool
+	app, ok = sym.(App)
 	if !ok {
 		panic("expecting corona.app interface")
 	}
-	app = a
-	return app
-}
-func Aux() Auxer {
-	if aux != nil {
-		return aux
-	}
-	p, err := plugin.Open(pluginName)
+	sym, err = p.Lookup("CoronaAux")
 	if err != nil {
 		panic(err)
 	}
-	sym, err := p.Lookup("CoronaAux")
-	if err != nil {
-		panic(err)
-	}
-	a, ok := sym.(Auxer)
+	aux, ok = sym.(Auxer)
 	if !ok {
 		panic("expecting corona.auxer interface")
 	}
-	aux = a
-	return aux
+	return app
 }
 func GetSessionFromCtx(ctx context.Context) Session {
 	sessionVal := ctx.Value("session")
@@ -75,4 +65,10 @@ func NewCountTimer(interval time.Duration, count int, fn func()) int64 {
 }
 func RemoveTimer(id int64) {
 	aux.RemoveTimer(id)
+}
+func GetServerID() string {
+	return aux.GetServerID()
+}
+func RPC(ctx context.Context, routeStr string, reply proto.Message, arg proto.Message) error {
+	return aux.RPC(ctx, routeStr, reply, arg)
 }
