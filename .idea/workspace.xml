@@ -21,9 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5f0ff8-cf12-4b7f-ac82-d75781be3d90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ineterfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/ineterfaces.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
