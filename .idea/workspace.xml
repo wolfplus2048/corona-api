@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa5f0ff8-cf12-4b7f-ac82-d75781be3d90" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ineterfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/ineterfaces.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xbddz/xbddz-gamebase" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -145,11 +144,11 @@
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="655" y="42" width="668" height="759" key="#go_build_main.go/67.27.1853.1052@67.27.1853.1052" timestamp="1588227706867" />
-    <state x="782" y="274" width="424" height="492" key="FileChooserDialogImpl" timestamp="1587734274279">
+    <state x="782" y="266" width="424" height="492" key="FileChooserDialogImpl" timestamp="1589267121261">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="741" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586598698478" />
-    <state x="782" y="274" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1587734274279" />
+    <state x="782" y="266" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1589267121261" />
     <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1587117177550">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
