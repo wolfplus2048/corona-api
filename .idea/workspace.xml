@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5f0ff8-cf12-4b7f-ac82-d75781be3d90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/struct.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ineterfaces.go" beforeDir="false" afterPath="$PROJECT_DIR$/ineterfaces.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +36,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" path="E:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -61,7 +61,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xbddz/xbddz-gate" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -138,6 +138,10 @@
       <screen x="68" y="23" width="1852" height="1057" />
     </state>
     <state x="794" y="217" key="#GOPATH/68.23.1852.1057@68.23.1852.1057" timestamp="1587042357952" />
+    <state x="4593" y="451" key="#GOROOT" timestamp="1590657018608">
+      <screen x="3840" y="0" width="1920" height="999" />
+    </state>
+    <state x="4593" y="451" key="#GOROOT/3840.0.1920.999/0.0.1920.999@3840.0.1920.999" timestamp="1590657018608" />
     <state x="347" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587116732560">
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
@@ -146,10 +150,11 @@
       <screen x="67" y="27" width="1853" height="1052" />
     </state>
     <state x="655" y="42" width="668" height="759" key="#go_build_main.go/67.27.1853.1052@67.27.1853.1052" timestamp="1588227706867" />
-    <state x="782" y="266" width="424" height="492" key="FileChooserDialogImpl" timestamp="1589267121261">
-      <screen x="67" y="27" width="1853" height="1052" />
+    <state x="4581" y="227" width="424" height="492" key="FileChooserDialogImpl" timestamp="1590658666687">
+      <screen x="3840" y="0" width="1920" height="999" />
     </state>
     <state x="741" y="276" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586598698478" />
+    <state x="4581" y="227" key="FileChooserDialogImpl/3840.0.1920.999/0.0.1920.999@3840.0.1920.999" timestamp="1590658666687" />
     <state x="782" y="266" width="424" height="492" key="FileChooserDialogImpl/67.27.1853.1052@67.27.1853.1052" timestamp="1589267121261" />
     <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1587117177550">
       <screen x="67" y="27" width="1853" height="1052" />

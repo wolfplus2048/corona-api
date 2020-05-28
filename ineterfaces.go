@@ -35,6 +35,7 @@ type Auxer interface {
 	GetConfig() *viper.Viper
 	GetServerID() string
 	RPC(ctx context.Context, routeStr string, reply proto.Message, arg proto.Message) error
+	GetServersByType(t string) (map[string]*Server, error)
 }
 // Module is the interface that represent a module.
 type Module interface {
@@ -57,3 +58,4 @@ type Component interface {
 	BeforeShutdown()
 	Shutdown()
 }
+
