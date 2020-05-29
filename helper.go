@@ -72,3 +72,6 @@ func GetServerID() string {
 func RPC(ctx context.Context, routeStr string, reply proto.Message, arg proto.Message) error {
 	return aux.RPC(ctx, routeStr, reply, arg)
 }
+func GetServersByType(t string) (map[string]*Server, error) {
+	return aux.GetServersByType(t)
+}
