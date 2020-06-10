@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa5f0ff8-cf12-4b7f-ac82-d75781be3d90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/corona-linux.so" beforeDir="false" afterPath="$PROJECT_DIR$/corona-linux.so" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,9 +132,10 @@
     <proxy>https://mirrors.aliyun.com/goproxy/</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="217" key="#GOPATH" timestamp="1587042357952">
-      <screen x="68" y="23" width="1852" height="1057" />
+    <state x="793" y="212" width="400" height="685" key="#GOPATH" timestamp="1591762210788">
+      <screen x="67" y="27" width="1853" height="1052" />
     </state>
+    <state x="793" y="212" width="400" height="685" key="#GOPATH/67.27.1853.1052@67.27.1853.1052" timestamp="1591762210788" />
     <state x="794" y="217" key="#GOPATH/68.23.1852.1057@68.23.1852.1057" timestamp="1587042357952" />
     <state x="794" y="494" width="404" height="142" key="#GOROOT" timestamp="1590989679017">
       <screen x="67" y="27" width="1853" height="1052" />
